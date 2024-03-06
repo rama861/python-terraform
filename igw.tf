@@ -1,3 +1,3 @@
 resource "aws_internet_gateway" "IGW" {
-  vpc_id = aws_vpc.VPC-1.id
+  vpc_id = aws_vpc.demovpc.id
 }
