@@ -1,5 +1,5 @@
 resource "aws_security_group" "sg1" {
-  vpc_id = aws_vpc.VPC-1.id
+  vpc_id = aws_vpc.demovpc.id
 
   ingress {
     from_port   = 80
@@ -27,7 +27,7 @@ resource "aws_security_group" "sg1" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "websg"
+    Name = "pysg"
   }
 
 }
