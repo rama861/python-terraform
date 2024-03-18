@@ -1,7 +1,7 @@
 resource "aws_instance" "python" {
-ami           = "ami-07761f3ae34c4478d"
+ami           = "ami-02d7fd1c2af6eead0"
 instance_type = "t2.micro"
-key_name                    = "shiva"
+key_name                    = "ram"
 vpc_security_group_ids      = [aws_security_group.sg1.id]
 subnet_id                   = aws_subnet.publicsubnet1.id
 associate_public_ip_address = true
